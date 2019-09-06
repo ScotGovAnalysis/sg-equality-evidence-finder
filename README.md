@@ -2,7 +2,7 @@
 
 You may use or re-use this source code (not including logos or icons) and documentation free of charge in any format or medium, under the terms of the Open Government Licence. See: [www.nationalarchives.gov.uk/doc/open-government-licence](www.nationalarchives.gov.uk/doc/open-government-licence)
 
-##About
+## About
 
 The Equality Evidence Finder Shiny App summarises the equality evidence produced by the Scottish Government and its Agencies. Note that the data contained in the repository is not kept up to date. The latest available data can be found on the [Equality Evidence Finder](https://scotland.shinyapps.io/sg-equality-evidence-finder).
 
@@ -43,7 +43,7 @@ filterData[["PANEL_ID"]] <- filter(EEFdata,policy_area=="SOME POLICY AREA",Indic
 graphOptions[["PANEL_ID"]] <- list(graphType="timeSeries1",#timeSeries1 is a line chart with user options for breakdowns
                                    digits=1)#digits is number of digits the chart rounds values to
 ```
-###Interactive Graph Options
+### Interactive Graph Options
 
 Interactive charts are built based on one of the app's chart templates. This avoids the need to build new charts from scratch each time, though  
 
@@ -59,7 +59,7 @@ Interactive charts are built based on one of the app's chart templates. This avo
 
 > TO ADD: full list of options
 
-##2. Shiny App
+## 2. Shiny App
 
 The shiny app has been built using [Shiny Modules](http://shiny.rstudio.com/articles/modules.html). This allows the same code to be used multiple times in the app without naming conflicts, and is used for organising the code. The code for each of the Evidence Finder app components is split between a
 
@@ -71,12 +71,12 @@ The shiny app has been built using [Shiny Modules](http://shiny.rstudio.com/arti
 
 Miscelaneous code can be found  in EEF scripts/helper_funcs.r. This includes functions for reading data from [statistics.gov.scot], the label formatter used from formatting dates in dygraphs, and the Evidence Finder colour palette.
 
-###app.r
+###  app.r
 
 app.r contains the code for loading the pre-processed app data (stored in EEF/index.rData and EEF/graph_data.rData), and calls the various module components.
 
 
-###App Components - UI functions
+### App Components - UI functions
 
 * **eefHelp():** contains the help screens for each graph. The text for these are written in markdown, found in the EEF/help folder. This starts hidden
 * feedback banner - not placed in a function as only one line - this places the beta banner at the top of the page
@@ -89,7 +89,7 @@ app.r contains the code for loading the pre-processed app data (stored in EEF/in
 * **eefContactList():** function that reads in 1 or 2 markdown files displaying the contact details for the Equality Stats team, and policy area (if relevant). Currently this is temporarily overwritten when the test app is updated so that it can read in the policy area details from the sandbox markdown file instead of the main app file.
 * **eefFooter():** adds the footer at the bottom.
 
-###App Components - Server functions
+### App Components - Server functions
 
 * **eefPublicationsSectionServer():** updates the links sections depending on the policy area and characteristic selected. Note that the app only has one publication links section that appears on all pages, rather than separate ones for each policy page.
 * **npfSectionServer():** displays the NPF dashboard for the selected equality characteristic (or a message saying breakdowns aren't available)
@@ -97,7 +97,7 @@ app.r contains the code for loading the pre-processed app data (stored in EEF/in
 * **eefSummarySectionServer():** displays the single-panel content (or panel tabs) for the selected equality characteristic. This is looped through for each topic section using lapply
 * **timeSeriesServer0(),...:** graph servers for each of the chart templates. This is run for each panel containing a graph, and the app uses lapply to select the correct server based on the graph type in graphOptions.
 
-###App Components - Javascript
+### App Components - Javascript
 
 Javascript written in the jquery syntax is mostly used for google analytics, and for showing/hiding components. The Evidence Finder uses some custom javascript to handle navigation instead of navbarPage due to the large (120) number of "subpages". Instead the Evidence Finder keeps track of the "subpage" a user is on in a javascript variable and shows/hides the components as needed.
 
@@ -107,7 +107,7 @@ Any component that is page specific is tagged with the class "eef" or "eef-main"
 * "eef eef-main eef-summ": visible on home page and equality characteristic summary pages
 * "eef eef-criJus": visible on the Crime and Justice pages only
 
-##Reference
+## Reference
 
 * [Shiny Modules](http://shiny.rstudio.com/articles/modules.html)
 * [jquery tutorial](https://www.w3schools.com/jquery/default.asp)
