@@ -13,6 +13,7 @@ library(googleVis)
 library(rmarkdown)
 library(knitr)
 library(RColorBrewer)
+library(googlesheets)
 onScots <- !require(SPARQL) #package that doesn't work on Scots. onScots is a flag used to switch off functionality incompatible with Scots
 
 #load helper scripts
@@ -137,16 +138,16 @@ ui <- fluidPage(
 server <- function(input,output,session) {
   
   #count number of connections to the server (i.e. number of users visiting site) and store in a google sheet - This is done in the server and doesn't involve personal data so should be compliant with all privacy regs
-  session$onSessionEnded(function() {
-    if(file.exists("gs_token.rds")) {
+  if(file.exists("gs_token.rds")) {
+    session$onSessionEnded(function() {
       gs_auth("gs_token.rds")
       gs <- gs_title("Equality Evidence Finder",verbose=F)
       #gs_add_row(gs,input=data.frame(timeStamp=Sys.Date()),verbose=F)
       row <- month(Sys.Date())-3 + (year(Sys.Date())-2019)*12
       #gs_edit_cells(gs,input=gs_read(gs)$pageviews[row] + 1,anchor=paste0("B",row+1))
       gs_edit_cells(gs,input=data.frame(B=gs_read(gs)$pageviews[row] + 1,C=Sys.time()),anchor=paste0("B",row+1),col_names=FALSE) #experimental code for adding last updated time stame
-    }
-  })
+    })
+  }
   
   
   
