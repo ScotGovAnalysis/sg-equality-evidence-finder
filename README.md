@@ -18,12 +18,13 @@ The code for this app is split into two parts: -
 The raw app data is found in App Data/EEF.rData. This contains several datasets used for managing the content on the app: -
 
 * **EEFsources:** contains the details for each of the data sources used in the app. Each has a unique series name, along with publication name, date and links
-* **EEFdata:** contains the data for interactive charts
 * **EEFpublished:** contains the list of publication series to be included in the links sections, along with flags specifying which characteristic(s) the link should appear under
 * **EEFdataLinks:** is similar to EEFpublished, but contains the list of data included in the data links section
 * **EEFexternal:** is similar to EEFpublished, but contains the list of external organisations included in the external links section (external publications still are found on the EEFpublished dataset)
 * **EEFindex:** contains the data for the content to be included in each of the policy area topic sections, along with the filepath of images and markdown files to be included. There is one row for each panel displayed on the Evidence Finder, containing a headline, graph title, graph, commentary (in markdown) and the data source series (see EEFsources)
-* **NPFdata:** Similar to EEFdata but contains a copy of the NPF indicator dataset
+* **EEFdata:** contains the data for interactive charts. The data for all charts is stored under the same set of variables, with Characteristic, Indicator, Measure, and Breakdown specifying what the data value represents (Characteristic is the equality characteristic that the data relates to; Indicator roughly corresponds to the panel the chart appears on; Measure corresponds to different chart views users can select between; and Breakdown is the various series to be displayed - though different chart templates use these slightly differently)
+* **NPFdata:** Similar to EEFdata but contains a copy of the NPF indicator dataset. NPFdata has an additional variable for NPF Outcome
+* **ODPdata:** A lookup table for the Characteristic, Indicator, Measure, Breakdowns for the data pulled in from the open data platform using sparql. The data on the open data platform isn't ordered, so this lookup table is used to specify the order (e.g. age bands are in ascending order). This lookup table also allows extra parameters to be specified including the graph title and series colour.
 * **EEFadditional:** is similar to EEFpublished, but contains a list of links that don't fit into any of the other categories (currently used for data collection guidance and glossary).
 
 The app will read in the processed master data files and will automatically generate the app based on these. Any step that doesn't need to be run every time a user visits the website is done at this stage to try to reduce the loading time of the app. This includes: -
