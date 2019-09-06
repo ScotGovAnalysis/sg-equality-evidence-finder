@@ -68,7 +68,8 @@ The shiny app has been built using [Shiny Modules](http://shiny.rstudio.com/arti
 * module Server function - found in EEF scripts/server_pack.r or EEF scripts/server_graphs.r
 * CSS code for styling - found in EEF scripts/EEFextra.css
 * Javascript code for showing/hiding components and google analytics events - found in www/javascript/EEF.js
-**Note:** Some components don't have a server function, css code and/or javascript code
+
+> **Note:** Some components don't have a server function, css code and/or javascript code
 
 Miscelaneous code can be found  in EEF scripts/helper_funcs.r. This includes functions for reading data from [statistics.gov.scot], the label formatter used from formatting dates in dygraphs, and the Evidence Finder colour palette.
 
