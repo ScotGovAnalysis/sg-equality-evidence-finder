@@ -1,4 +1,4 @@
-#SPARQL Query Template
+# SPARQL Query Template
 
 SPARQL queries are added to the Evidence Finder graph_data.r script. The query should be entered
 as a parameter in the graphOptions list e.g.
@@ -26,7 +26,7 @@ The app code requires the sparql query to create a dataset including the standar
     * updateQuery: set to TRUE if you want the dataset to be read into the app everytime the app is viewed by a user (the default is for the update to only be done when the updateApp() script is run before deploying the app)
     * filterSparql: by default the app will only include sparql query results that appear in the look-up table in the main spreadsheets (see step 5). Set filterSparql to FALSE to include everything that the query returns
 
-##Add URIs for
+## Add URIs for
 
 * geography (Scotland level has been pre-filled. Change this for any other levels)
     * Scotland: <http://statistics.gov.scot/id/statistical-geography/S92000003>
@@ -41,7 +41,7 @@ The app code requires the sparql query to create a dataset including the standar
     * Count: <http://statistics.gov.scot/def/measure-properties/count>
     * Ratio: <http://statistics.gov.scot/def/measure-properties/ratio>
 
-##Template
+## Template
 
 ```
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -73,7 +73,7 @@ WHERE {
 }
 ```
 
-##Example Query
+## Example Query
 
 ```
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>

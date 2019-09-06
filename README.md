@@ -1,10 +1,10 @@
 # Equality Evidence Finder
 
-You may use or re-use this source code (not including logos or icons) and documentation free of charge in any format or medium, under the terms of the Open Government Licence. See: [www.nationalarchives.gov.uk/doc/open-government-licence](www.nationalarchives.gov.uk/doc/open-government-licence)
+> You may use or re-use this source code (not including logos, icons, or images) and documentation free of charge in any format or medium, under the terms of the Open Government Licence. See: [www.nationalarchives.gov.uk/doc/open-government-licence](www.nationalarchives.gov.uk/doc/open-government-licence). Icons used on the Equality Evidence Finder (not included within this repository) require a seperate license from <https://www.flaticon.com> 
 
 ## About
 
-The Equality Evidence Finder Shiny App summarises the equality evidence produced by the Scottish Government and its Agencies. Note that the data contained in the repository is not kept up to date. The latest available data can be found on the [Equality Evidence Finder](https://scotland.shinyapps.io/sg-equality-evidence-finder).
+The [Equality Evidence Finder Shiny App](www.equalityevidence.scot) summarises the equality evidence produced by the Scottish Government and its Agencies. Note that the data contained in the repository is not kept up to date. The latest available data can be found on the [Equality Evidence Finder](www.equalityevidence.scot).
 
 Please contact the [Scottish Government Equality Analysis Team](mailto:social-justice-analysis@gov.scot) for further information.
 
@@ -18,12 +18,13 @@ The code for this app is split into two parts: -
 The raw app data is found in App Data/EEF.rData. This contains several datasets used for managing the content on the app: -
 
 * **EEFsources:** contains the details for each of the data sources used in the app. Each has a unique series name, along with publication name, date and links
-* **EEFdata:** contains the data for interactive charts
 * **EEFpublished:** contains the list of publication series to be included in the links sections, along with flags specifying which characteristic(s) the link should appear under
 * **EEFdataLinks:** is similar to EEFpublished, but contains the list of data included in the data links section
 * **EEFexternal:** is similar to EEFpublished, but contains the list of external organisations included in the external links section (external publications still are found on the EEFpublished dataset)
 * **EEFindex:** contains the data for the content to be included in each of the policy area topic sections, along with the filepath of images and markdown files to be included. There is one row for each panel displayed on the Evidence Finder, containing a headline, graph title, graph, commentary (in markdown) and the data source series (see EEFsources)
-* **NPFdata:** Similar to EEFdata but contains a copy of the NPF indicator dataset
+* **EEFdata:** contains the data for interactive charts. The data for all charts is stored under the same set of variables, with Characteristic, Indicator, Measure, and Breakdown specifying what the data value represents (Characteristic is the equality characteristic that the data relates to; Indicator roughly corresponds to the panel the chart appears on; Measure corresponds to different chart views users can select between; and Breakdown is the various series to be displayed - though different chart templates use these slightly differently)
+* **NPFdata:** Similar to EEFdata but contains a copy of the NPF indicator dataset. NPFdata has an additional variable for NPF Outcome
+* **ODPdata:** A lookup table for the Characteristic, Indicator, Measure, Breakdowns for the data pulled in from the open data platform using sparql. The data on the open data platform isn't ordered, so this lookup table is used to specify the order (e.g. age bands are in ascending order). This lookup table also allows extra parameters to be specified including the graph title and series colour.
 * **EEFadditional:** is similar to EEFpublished, but contains a list of links that don't fit into any of the other categories (currently used for data collection guidance and glossary).
 
 The app will read in the processed master data files and will automatically generate the app based on these. Any step that doesn't need to be run every time a user visits the website is done at this stage to try to reduce the loading time of the app. This includes: -
@@ -67,7 +68,8 @@ The shiny app has been built using [Shiny Modules](http://shiny.rstudio.com/arti
 * module Server function - found in EEF scripts/server_pack.r or EEF scripts/server_graphs.r
 * CSS code for styling - found in EEF scripts/EEFextra.css
 * Javascript code for showing/hiding components and google analytics events - found in www/javascript/EEF.js
-**Note:** Some components don't have a server function, css code and/or javascript code
+
+> **Note:** Some components don't have a server function, css code and/or javascript code
 
 Miscelaneous code can be found  in EEF scripts/helper_funcs.r. This includes functions for reading data from [statistics.gov.scot], the label formatter used from formatting dates in dygraphs, and the Evidence Finder colour palette.
 
@@ -110,5 +112,8 @@ Any component that is page specific is tagged with the class "eef" or "eef-main"
 ## Reference
 
 * [Shiny Modules](http://shiny.rstudio.com/articles/modules.html)
+* [Dygraphs options documentation](http://dygraphs.com/options.html)
+* [Google charts - bar charts documentation](https://developers.google.com/chart/interactive/docs/gallery/barchart)
+* [Google charts - pie charts documentation](https://developers.google.com/chart/interactive/docs/gallery/piechart)
 * [jquery tutorial](https://www.w3schools.com/jquery/default.asp)
 * [css tutorial](https://www.w3schools.com/Css/)
