@@ -4,7 +4,7 @@
 
 ## About
 
-The Equality Evidence Finder Shiny App summarises the equality evidence produced by the Scottish Government and its Agencies. Note that the data contained in the repository is not kept up to date. The latest available data can be found on the [Equality Evidence Finder](https://scotland.shinyapps.io/sg-equality-evidence-finder).
+The [Equality Evidence Finder Shiny App](www.equalityevidence.scot) summarises the equality evidence produced by the Scottish Government and its Agencies. Note that the data contained in the repository is not kept up to date. The latest available data can be found on the [Equality Evidence Finder](www.equalityevidence.scot).
 
 Please contact the [Scottish Government Equality Analysis Team](mailto:social-justice-analysis@gov.scot) for further information.
 
