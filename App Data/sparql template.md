@@ -1,4 +1,4 @@
-#SPARQL Query Template
+# SPARQL Query Template
 
 SPARQL queries are added to the Evidence Finder graph_data.r script. The query should be entered
 as a parameter in the graphOptions list e.g.
