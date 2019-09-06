@@ -1,6 +1,6 @@
 # Equality Evidence Finder
 
-> You may use or re-use this source code (not including logos or icons) and documentation free of charge in any format or medium, under the terms of the Open Government Licence. See: [www.nationalarchives.gov.uk/doc/open-government-licence](www.nationalarchives.gov.uk/doc/open-government-licence)
+> You may use or re-use this source code (not including logos, icons, or images) and documentation free of charge in any format or medium, under the terms of the Open Government Licence. See: [www.nationalarchives.gov.uk/doc/open-government-licence](www.nationalarchives.gov.uk/doc/open-government-licence)
 
 ## About
 
