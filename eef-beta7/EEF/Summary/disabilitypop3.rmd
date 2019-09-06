@@ -1,0 +1,9 @@
+`r 
+total<- filter(EEFlatest,Characteristic=="Disability",Measure=="Disabled",policy_area=="Summary",Breakdown=="All children")
+women<- filter(EEFlatest,Characteristic=="Disability",Measure=="Disabled",policy_area=="Summary",Breakdown=="Girls")
+men<- filter(EEFlatest,Characteristic=="Disability",Measure=="Disabled",policy_area=="Summary",Breakdown=="Boys")
+`
+
+* `r round(total$Figure,0)`% of children had a long-term limiting mental or physical health condition or disability in `r total$Year`
+
+* In `r total$Year`, `r round(women$Figure,0)`% of girls were disabled and `r round(men$Figure,0)`% of boys were disabled`

@@ -1,0 +1,1 @@
+* Offence aggravation data indicate that in 2016-17, 14 people were convicted in Scottish courts of an offence with an associated transgender aggravation. Thirteen of these were for charges of breach of the peace.

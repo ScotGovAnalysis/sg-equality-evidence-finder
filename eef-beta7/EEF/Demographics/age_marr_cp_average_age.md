@@ -1,0 +1,1 @@
+* In Scotland, the average age at first marriage increased for both males and females by almost 10 years between 1975 and 2017. The average age at first marriage increased from 24.3 to 34.2 for males and from 22.4 to 32.5 for females.

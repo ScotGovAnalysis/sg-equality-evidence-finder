@@ -1,0 +1,31 @@
+
+
+`r 
+#set up the data.
+
+
+#create a variable containing all the year options.
+
+Year <- levels(as.factor(EEFdata$Year))
+
+
+#Get the latest year
+latestyear <- filter(EEFlatest, Measure == "% of young people aged 17 and under looked after 31st July",
+                            Characteristic == "Age")$Year[1]
+
+#create the latest year's data for the percentage of the population looked after (no edit needed)
+
+percent_of_pop <- round(filter(EEFlatest, Measure == "% of young people aged 17 and under looked after 31st July",
+                               Characteristic == "Age", Breakdown == "0-17")$Figure,1)
+
+#create the latest year's data for the count of looked after children (no edit needed)
+
+Count_of_lac <- format(as.numeric(filter(EEFlatest, Measure == "Count of young people looked after, 31st July",
+                                      Characteristic == "Age", Breakdown == "All")$Figure),scientific=FALSE,big.mark=",")
+
+#writen text. No edit needed, it should update with above.
+
+`
+
+* In `r latestyear`, there were an estimated `r Count_of_lac` looked after children in Scotland, with the majority of these
+	being aged 17 and under. This represents `r percent_of_pop` per cent of the total 0-17 population.

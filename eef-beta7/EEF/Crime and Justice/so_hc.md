@@ -1,0 +1,4 @@
+* The legislation for the newer categories of hate crime, including sexual orientation, came into force on 24 March 2010. The data in this publication therefore cover 2010-11 and 2011-12 only. The figures quoted relate to the number of charges reported, rather than the number of individuals charged or the number of incidents that gave rise to such charges.
+* In 2011-12, 652 charges were reported with an aggravation of prejudice relating to sexual orientation. This is 46% more than the number reported in 2010-11, the first full year of implementation of the legislation.
+* This increase is thought to be due to increased awareness, reporting and recording of these crimes, following several incidents relating to religious prejudice which received significant media attention during the year and which may have increased awareness of other hate crimes as well.
+* Court proceedings were commenced in 82% of charges.

@@ -1,0 +1,37 @@
+
+`r 
+#set up the data.
+
+
+#create a variable containing all the year options. Latest year of a school year (no edit needed)
+
+Year <- levels(as.factor(EEFlatest$Year))
+
+#create the latest year as a variable (no edit needed)
+
+latestyear <- filter(EEFlatest, Measure == "% of young people aged 17 and under looked after 31st July",
+                            Characteristic == "Age")$Year[1]
+
+#create the latest year's data for the percentage of looked after children with a disability (no edit needed)
+
+percent_lac_disabled <- round(as.numeric(filter(EEFlatest, Measure == "% young people looked after with a disability, 31st July",
+                               Characteristic == "Disability")$Figure),1)
+
+#create the latest year's data for the count of looked after children (no edit needed)
+
+Count_of_lac <- format(as.numeric(filter(EEFlatest, Measure == "Count of young people looked after, 31st July",
+                                      Characteristic == "Age", Breakdown == "All")$Figure),scientific=FALSE,big.mark=",")
+
+#all children
+all_children <- filter(EEFlatest,Characteristic=="Disability",Measure=="Disabled",policy_area=="Summary",Breakdown=="All children")
+higher_lower<- function(a,b,threshold=1) {
+  ifelse(abs(a-b)>=threshold,
+         ifelse(a>b,"higher than","lower than"),
+         "similar to")
+}
+#writen text. No edit needed, it should update with above.
+
+`
+
+* In `r latestyear`, an estimated `r percent_lac_disabled` per cent of Scotland's `r Count_of_lac` looked after children were recorded as
+	having a disability. This is `r higher_lower(percent_lac_disabled,all_children$Figure)` the overall proportion of children with a disability (`r round(all_children$Figure,0)` per cent) found in the [Scottish Health Survey `r all_children$Year[1]`](https://www2.gov.scot/Topics/Statistics/Browse/Health/scottish-health-survey)

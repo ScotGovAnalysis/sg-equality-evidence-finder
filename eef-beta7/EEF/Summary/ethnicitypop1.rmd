@@ -1,0 +1,6 @@
+`r latest <- filter(EEFlatest,Measure=="% of Adult Population",Characteristic=="Ethnicity",policy_area=="Summary")
+`
+
+* In `r latest$Year[1]`, the largest ethnic group was 'White Scottish' at `r round(filter(latest,Breakdown=="White: Scottish")$Figure,1)`%
+
+* Minority ethnic adults represented `r round(sum(filter(latest,!grepl("White",Breakdown))$Figure),1)`% in `r latest$Year[1]`

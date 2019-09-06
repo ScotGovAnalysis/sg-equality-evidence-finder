@@ -1,0 +1,48 @@
+
+
+
+`r 
+#set up the data.
+
+
+#create a variable containing all the year options. Latest year of a school year (no edit needed)
+
+Year <- levels(as.factor(EEFdata$Year))
+
+
+#create a latest year variable (no edit needed)
+
+latestyear <- filter(EEFlatest, Measure == "% of young people aged 17 and under looked after 31st July",
+                            Characteristic == "Age")$Year[1]
+
+
+#create the latest year's data for the % of looked after children who had a religion (no edit needed)
+
+LAC_pc_with_religion <- round(filter(EEFlatest, Measure == "% young people looked after by religion, 31st July",
+                                      Characteristic == "Religion", Breakdown == "Have a religion")$Figure,1)
+
+#create the latest year's data for the % of looked after children who had no religion (no edit needed)
+
+LAC_pc_no_religion <- round(filter(EEFlatest, Measure == "% young people looked after by religion, 31st July",
+                                      Characteristic == "Religion", Breakdown == "No religion")$Figure,1)
+
+#create the latest year's data for the % of looked after children who had an unknown religion (no edit needed)
+
+LAC_pc_religion_unknown <- round(filter(EEFlatest, Measure == "% young people looked after by religion, 31st July",
+                                      Characteristic == "Religion", Breakdown == "Unknown")$Figure,1)
+
+
+#create the latest year's data for the count of looked after children (no edit needed)
+
+Count_of_LAC <- format(as.numeric(filter(EEFlatest, Measure == "Count of young people looked after, 31st July",
+                                      Characteristic == "Age", Breakdown == "All")$Figure),scientific=FALSE,big.mark=",")
+
+
+#writen text. No edit needed, it should update with above.
+
+`
+
+* On 31st July `r latestyear`, of the estimated `r Count_of_LAC` children who were looked after in Scotland, 
+	`r LAC_pc_with_religion` per cent were recorded as having a religion, while `r LAC_pc_no_religion` per cent
+	had no religion. However, the majority of children, `r LAC_pc_religion_unknown` per cent, had an unknown religion.
+	

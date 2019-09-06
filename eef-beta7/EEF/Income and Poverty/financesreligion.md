@@ -1,0 +1,1 @@
+* At Great Britain level, Muslim and Buddhist groups appear to the lowest levels of wealth of all groups. However, this should be interpreted in the context of the much younger age profile of these populations.

@@ -1,0 +1,1 @@
+* As at end March 2018, 0.8% of the staff employed by NHSScotland declared a disability.  (Information on disability, ethnicity, religion and sexual orientation is based on data from a self-reported questionnaire. As this is not mandatory, response rates and completion are variable across NHSScotland.)

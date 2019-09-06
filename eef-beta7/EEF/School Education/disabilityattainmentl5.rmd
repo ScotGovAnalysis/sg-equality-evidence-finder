@@ -1,0 +1,44 @@
+
+
+
+`r 
+#set up the data.
+
+
+#create a variable containing all the year options. Latest year of a school year (no edit needed)
+
+Year <- levels(as.factor(EEFlatest$Year))
+
+#create a label for each year, e.g. the latest school leaver cohort (no edit needed)
+
+label <- ifelse(as.numeric(substr(Year,3,4))-1 < 10, paste(substr(Year,1,2), "0", as.character(as.numeric(substr(Year,3,4))-1),"/",substr(Year,3,4),sep = ""),
+                paste(substr(Year,1,2), as.character(as.numeric(substr(Year,3,4))-1),"/",substr(Year,3,4),sep = ""))
+
+#combine the 2 variables above to make a look up (no edit needed)
+
+year_lookup <- cbind(Year,label)
+
+#match on year look up lables to the data set (no edit needed)
+
+School_Education <- merge(EEFlatest,year_lookup, by= "Year")
+
+#create the latest year as a variable (no edit needed)
+
+latestyear <- as.character( filter(School_Education, Measure == "% school leavers achieving 1 or more passes at SCQF Level 5 or better",
+                                   Characteristic == "Disability")$label[1] )
+
+#create the asn and no asn figures (no edit needed)
+
+asn <- round(as.numeric(filter(School_Education, Measure == "% school leavers achieving 1 or more passes at SCQF Level 5 or better",
+                            Characteristic == "Disability",  Breakdown == "ASN", Year == max(Year))$Figure),1)
+
+noasn <- round(as.numeric(filter(School_Education, Measure == "% school leavers achieving 1 or more passes at SCQF Level 5 or better",
+                               Characteristic == "Disability",  Breakdown == "No ASN")$Figure),1)
+
+#writen text. No edit needed, it should update with above.
+
+`
+
+* School leavers with additional support needs in `r latestyear`, continued to have lower attainment, with `r asn` per cent of pupils 
+	with an additional support need achieving one or more passes at SCQF Level 5 or  better compared to `r noasn` per cent for 
+	those with no additional support needs.

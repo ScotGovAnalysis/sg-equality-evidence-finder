@@ -1,0 +1,1 @@
+`r paste0("__*",match_glossary$name,":*__ ",match_glossary$description,collapse="\n\n")`

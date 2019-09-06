@@ -1,0 +1,1 @@
+* The leading cause of death in 2017 differed by sex, with men more likely to die from ischaemic heart disease (14.3% of all deaths) and women more likely to die from dementia and Alzheimer's disease (14.8% of all deaths).

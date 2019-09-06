@@ -1,0 +1,3 @@
+`r asylumseekers <- filter(EEFlatest,policy_area=="Income and Poverty",Measure=="Asylum seekers claiming Section 95 support",Characteristic=="Ethnicity")`
+
+* In `r format(as.Date(asylumseekers$Date[1]),"%B %Y")`, `r format(asylumseekers$Figure[1],big.mark=",",digits=0)` asylum seekers were claiming Section 95 support due to risk of destitution. The majority of these asylum seekers resided in Glasgow. 

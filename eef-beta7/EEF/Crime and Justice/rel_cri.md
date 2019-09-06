@@ -1,0 +1,3 @@
+* Of charges with religious aggravations reported to the Crown Office and Procurator Fiscal Services (COPFS) in 2016-17, 384 (57%) charges referred to incidents which were derogatory to Roman Catholicism and 165 (25%) were derogatory towards Protestantism.
+* There were 113 charges which referred to conduct which was derogatory to Islam and 23 were derogatory towards Judaism. In comparison, in 2015-16, there were 134 charges which referred to conduct which was derogatory to Islam and 18 were derogatory towards Judaism.
+* Religiously aggravated crime was most commonly reported in Glasgow (30% of all charges). Most of the accused were male (91%) with 41% of all accused between the ages of 16 and 30.

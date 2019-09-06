@@ -1,0 +1,16 @@
+
+`r graphData$yearlab <- paste0(graphData$Year-3,"-",substr(graphData$Year,3,4))`
+`r graphLatest <- filter(graphData,Year==max(Year))`
+
+*Relative Poverty After Housing Costs:*
+
+* In `r graphLatest$yearlab[1]`, `r filter(graphLatest,Breakdown=="Muslim",Measure=="% in relative poverty AHC")$Figure`% of people who identified their religion as Muslim were living in poverty after housing costs.
+* Those who identify their religion as Church of Scotland had a slightly lower poverty rate after housing costs (`r filter(graphLatest,Breakdown=="Church of Scotland",Measure=="% in relative poverty AHC")$Figure`%) than found for all individuals. 
+* All other religious groups and those with no religion had a relative poverty rate after housing costs similar to that found for the whole population (`r filter(graphLatest,Breakdown=="No religion",Measure=="% in relative poverty AHC")$Figure`%).
+
+*Relative Poverty Before Housing Costs:*
+
+
+* In `r graphLatest$yearlab[1]`, `r filter(graphLatest,Breakdown=="Muslim",Measure=="% in relative poverty BHC")$Figure`% of people who were Muslim were living in poverty before housing costs.
+* All other religious groups had a relative poverty rate before housing costs similar to that found for the whole population (`r filter(graphLatest,Breakdown=="Total",Measure=="% in relative poverty BHC")$Figure`%).
+

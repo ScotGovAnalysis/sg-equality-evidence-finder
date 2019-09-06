@@ -1,0 +1,43 @@
+
+
+
+`r 
+#set up the data.
+
+
+#create a variable containing all the year options. Latest year of a school year (no edit needed)
+
+Year <- levels(as.factor(EEFlatest$Year))
+
+#create a label for each year, e.g. the latest school leaver cohort (no edit needed)
+
+label <- ifelse(as.numeric(substr(Year,3,4))-1 < 10, paste(substr(Year,1,2), "0", as.character(as.numeric(substr(Year,3,4))-1),"/",substr(Year,3,4),sep = ""),
+      paste(substr(Year,1,2), as.character(as.numeric(substr(Year,3,4))-1),"/",substr(Year,3,4),sep = ""))
+
+#combine the 2 variables above to make a look up (no edit needed)
+
+year_lookup <- cbind(Year,label)
+
+#match on year look up lables to the data set (no edit needed)
+
+School_Education <- merge(EEFlatest,year_lookup, by= "Year")
+
+#create the latest year as a variable (no edit needed)
+
+latestyear <- as.character( filter(School_Education, Measure == "% school leavers in a positive follow-up destination",
+                            Characteristic == "Ethnicity")$label[1] )
+
+#create the least and most deprived quintile data for the most recent year's data for (no edit needed)
+
+q1_data <- round(filter(School_Education, Measure == "% school leavers in a positive follow-up destination",
+                            Characteristic == "Socio-Economic Status", Breakdown == "0-20% (Most Deprived)")$Figure,1)
+
+q5_data <- round(filter(School_Education, Measure == "% school leavers in a positive follow-up destination",
+                        Characteristic == "Socio-Economic Status", Breakdown == "80-100% (Least Deprived)")$Figure,1)
+
+#writen text. No edit needed, it should update with above.
+
+`
+
+* In `r latestyear`, `r q1_data` per cent of school leavers in the most deprived areas were in a positive follow-up destination compared
+	 to `r q5_data` per cent of school leavers in the least deprived areas.

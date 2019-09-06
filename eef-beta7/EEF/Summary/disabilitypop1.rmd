@@ -1,0 +1,9 @@
+`r 
+total<- filter(EEFlatest,Characteristic=="Disability",Measure=="Disabled",policy_area=="Summary",Breakdown=="All adults")
+women<- filter(EEFlatest,Characteristic=="Disability",Measure=="Disabled",policy_area=="Summary",Breakdown=="Women")
+men<- filter(EEFlatest,Characteristic=="Disability",Measure=="Disabled",policy_area=="Summary",Breakdown=="Men")
+`
+
+* `r round(total$Figure,0)`% of adults had a long-term limiting mental or physical health condition or disability in `r total$Year`
+
+* In `r total$Year`, `r round(women$Figure,0)`% of women were disabled and `r round(men$Figure,0)`% of men were disabled`

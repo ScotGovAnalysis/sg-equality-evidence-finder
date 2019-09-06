@@ -1,0 +1,3 @@
+-   Social renters are more likely to have a limiting, long-term
+    physical or mental health condition (42%) than any other tenure and
+    the population as a whole (24%).

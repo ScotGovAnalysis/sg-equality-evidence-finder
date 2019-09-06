@@ -1,0 +1,5 @@
+`r graphData$yearlab <- paste0(graphData$Year-3,"-",substr(graphData$Year,3,4))`
+`r graphLatest <- filter(graphData,Year==max(Year))`
+
+* In `r graphLatest$yearlab[1]`, `r filter(graphLatest,Breakdown=="Women",Measure=="Single pensioners: % in relative poverty AHC")$Figure`% of single female pensioners and `r filter(graphLatest,Breakdown=="Men",Measure=="Single pensioners: % in relative poverty AHC")$Figure`% of single male pensioners were in poverty after housing costs.
+* The rate for female pensioners has tended to be higher than that for men. The gap closed slightly between 2008 and 2014, but has since widened again.

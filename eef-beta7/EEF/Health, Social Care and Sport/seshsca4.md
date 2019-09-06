@@ -1,0 +1,5 @@
+* In 2017, age-standardised WEMWBS mean scores decreased as area deprivation increased. The mean age-standardised WEMWBS score for the least deprived areas (51.8) was significantly higher than the most deprived areas (47.5).
+* In 2017, prevalence of adults with a GHQ-12 score of four or more was significantly associated with area deprivation. In the most deprived areas, 24% of adults had a GHQ-12 score of four or more, compared to 14% in the least deprived areas.
+* In 2014-2017, prevalence of two or more depressive symptoms increased as area deprivation increased. In the least deprived areas, 5% of adults reported two or more depressive symptoms while in the most deprived areas 20% of adults did so.
+* In 2014-2017, the prevalence of 2 or more symptoms of anxiety among adults was significantly lower in the least deprived areas (7%) than in the most deprived areas (17%).
+* In 2014-2017, the proportion of adults that had attempted suicide was significantly higher among those living in the most deprived areas (12%), than in the least deprived areas (4%).

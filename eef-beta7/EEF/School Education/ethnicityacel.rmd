@@ -1,0 +1,29 @@
+
+
+`r 
+#set up the data.
+
+
+#create a variables containing the 4 organasiers data
+
+reading <- round(filter(graphData, grepl("Reading", Indicator))$Figure,0)
+writing <- round(filter(graphData, grepl("Writing", Indicator))$Figure,0)
+listen <- round(filter(graphData, grepl("Listening & Talking", Indicator))$Figure,0)
+numeracy <- round(filter(graphData, grepl("Numeracy", Indicator))$Figure,0)
+
+#code level achieving depending on the tab.
+level <- ifelse(panelData$tab == 'P1', "Early Level", 
+		ifelse(panelData$tab == 'P4', "First Level", 
+		ifelse(panelData$tab == 'P7', "Second Level", 
+		ifelse(panelData$tab == 'S3', "Third Level or better"))))
+
+total_wording <- ifelse(graphData$Measure[1] == "Total", paste("The proportion of ", panelData$tab, " pupils achieving ", level),
+			paste("The proportion of ", graphData$Measure[1], " ", panelData$tab, " pupils achieving ", level))
+
+`
+
+`r total_wording`:
+* `r reading` per cent in reading  
+* `r writing` per cent in writing  
+* `r listen` per cent in listening and talking  
+* `r numeracy` per cent in numeracy  

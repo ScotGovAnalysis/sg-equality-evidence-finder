@@ -1,0 +1,2 @@
+* Among the population aged 16 to 70 as a whole, there were 70 Criminal Justice Social Work Reports (CJSWRs) per 10,000 population in 2016-17. Reflecting the general age distribution of offenders, CJSWRs were most commonly submitted for young adults, particularly those aged 18 to 20 (148 per 10,000 population).
+* The incidence was also relatively high amongst 21 to 25 year olds (128 per 10,000 population) and 26 to 30 year olds (122 per 10,000 population).

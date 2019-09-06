@@ -1,0 +1,1 @@
+* People 'not limited' by a long-term health problem or disability were more likely to be single (39%), than people who were limited either, 'a little' (23%), or 'a lot' (21%). People who were limited 'a lot' were less likely to be married (39%) than people limited 'a little' and those 'not limited' (both 46%).

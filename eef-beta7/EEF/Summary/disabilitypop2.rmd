@@ -1,0 +1,24 @@
+`r 
+total<- filter(EEFlatest,Characteristic=="Disability",Measure=="Disabled",policy_area=="Summary",Breakdown=="All adults")
+women<- filter(EEFlatest,Characteristic=="Disability",Measure=="Disabled",policy_area=="Summary",Breakdown=="Women")
+men<- filter(EEFlatest,Characteristic=="Disability",Measure=="Disabled",policy_area=="Summary",Breakdown=="Men")
+prev_total<- filter(EEFdata,Characteristic=="Disability",Measure=="Disabled",policy_area=="Summary",Breakdown=="All adults",Year==total$Year-9)
+prev_women<- filter(EEFdata,Characteristic=="Disability",Measure=="Disabled",policy_area=="Summary",Breakdown=="Women",Year==total$Year-9)
+prev_men<- filter(EEFdata,Characteristic=="Disability",Measure=="Disabled",policy_area=="Summary",Breakdown=="Men",Year==total$Year-9)
+
+
+increased_decreased <- function(a,b,threshold=1) {
+  ifelse(abs(a-b)>=threshold,
+         ifelse(a>b,"decreased","increased"),
+         "changed little")
+}
+`
+
+* The proportion of adults with a long-term limiting mental or physical health condition or disability is increasing, as the population ages
+
+* Between `r prev_total$Year` and `r total$Year`, the proportion of women who were disabled `r increased_decreased(prev_women$Figure,women$Figure)` from `r round(prev_women$Figure)`% to `r round(women$Figure)`%
+
+* Over the same period, the proportion of men who were disabled `r increased_decreased(prev_men$Figure,men$Figure)` from `r round(prev_men$Figure)`% to `r round(men$Figure)`%
+
+
+

@@ -1,0 +1,1 @@
+* In 2017/18, participation rate for young people (aged 16-19) living in the most deprived areas (SIMD quintile 1) was 85.7% compared to those in the least deprived areas (SIMD quintile 5) which was 96.5%.

@@ -1,0 +1,1 @@
+* In 2017/18, 95.2% of young people (aged 16-19) from minority ethnic groups were participating in education, employment or training, compared to 91.8% of those from non-minority (White) ethnic groups.
