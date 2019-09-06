@@ -111,5 +111,8 @@ Any component that is page specific is tagged with the class "eef" or "eef-main"
 ## Reference
 
 * [Shiny Modules](http://shiny.rstudio.com/articles/modules.html)
+* [Dygraphs options documentation](http://dygraphs.com/options.html)
+* [Google charts - bar charts documentation](https://developers.google.com/chart/interactive/docs/gallery/barchart)
+* [Google charts - pie charts documentation](https://developers.google.com/chart/interactive/docs/gallery/piechart)
 * [jquery tutorial](https://www.w3schools.com/jquery/default.asp)
 * [css tutorial](https://www.w3schools.com/Css/)
