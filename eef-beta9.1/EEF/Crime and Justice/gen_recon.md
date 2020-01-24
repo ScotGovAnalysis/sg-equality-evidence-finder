@@ -1,0 +1,1 @@
+* Continuing a persistent long-term trend, males have higher reconviction rates and a higher average number of reconvictions per offender than females. However, the gap has narrowed in recent years. The average number of reconvictions per offender for the 2016-17 cohort was 0.49 for males, and 0.43 for females. The reconviction rates were 28.0% for males and 23.3% for females.

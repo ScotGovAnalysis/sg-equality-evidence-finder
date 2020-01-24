@@ -1,0 +1,1 @@
+* EM is not considered appropriate for offenders with mental health issues or learning difficulties.  For example, the recent Ministry of Justice GPS pilot excluded those who were assessed to have “‘serious identified mental health or learning disabilities” from consideration from GPS EM.

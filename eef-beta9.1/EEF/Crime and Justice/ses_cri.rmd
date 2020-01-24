@@ -1,0 +1,2 @@
+* In `r max(graphData$DateCode)`, Adults living in the most deprived 15 per cent of areas in Scotland were more likely to have been a victim of crime in the previous 12 months.
+* `r filter(graphData,Breakdown=="15% most deprived",Year==max(Year))$Figure %>% round` per cent of adults living in the 15% most deprived areas had been a victim of crime in the previous 12 months, whereas `r filter(graphData,Breakdown=="Rest of Scotland",Year==max(Year))$Figure %>% round` per cent of adults living in the rest of Scotland had been a victim of crime.

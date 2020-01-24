@@ -1,0 +1,1 @@
+* In 2018, the percentage of adults who agreed that they could influence decisions affecting their local area was similar for all religious groups - Other Religion (25%), Christians (20%) and No Religion (21%).

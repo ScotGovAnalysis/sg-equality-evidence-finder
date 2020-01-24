@@ -1,0 +1,13 @@
+`r latest_year <- graphData$Year %>% max`
+`r first_year <- graphData$Year %>% min`
+
+*In `r latest_year` the Scottish Government workforce was made up of:*
+  
+* `r filter(graphData,Breakdown=="Minority ethnic",Year==latest_year)$Figure %>% sprintf("%1.1f%%",.)` were minority ethnic
+* `r filter(graphData,Breakdown=="White",Year==latest_year)$Figure %>% sprintf("%1.1f%%",.)` were white
+* The ethnic group is not known for `r filter(graphData,Breakdown%in%c("Unknown","Prefer not to say"),Year==latest_year)$Figure %>% sum %>% sprintf("%1.1f%%",.)` of staff.
+
+*Between `r first_year` and `r latest_year`:*
+
+* Minority ethnic people increasingly comprise more of the organisations workforce: increasing from `r filter(graphData, Year==first_year, Breakdown == "Minority ethnic")$Figure %>% sprintf("%1.1f%%",.)` to `r filter(graphData, Year==latest_year, Breakdown == "Minority ethnic")$Figure %>% sprintf("%1.1f%%",.)`
+* Declaration rates have increased from `r (100-filter(graphData, Year==first_year, Breakdown == "Unknown")$Figure) %>% sprintf("%1.1f%%",.)` to `r (100-filter(graphData, Year==latest_year, Breakdown == "Unknown")$Figure) %>% sprintf("%1.1f%%",.)`

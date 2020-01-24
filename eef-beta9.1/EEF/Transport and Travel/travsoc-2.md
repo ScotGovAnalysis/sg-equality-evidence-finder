@@ -1,0 +1,2 @@
+* There is not a great difference between levels of walking as a means of transport between different income groups. In 2016, households with incomes over £40,000 walked most often walk each month (71%), and those over £20,000 to £25,000 the least (64%). 
+* Cycling is used as a means of transport most often by households with incomes over £50,000 (9% at least once a month), and least often by those with incomes between £10,000 and £20,000 (4%).

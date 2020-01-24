@@ -1,0 +1,1 @@
+* In `r max(graphData$Year)` `r round(sum(filter(graphData,Breakdown=="Minority ethnic")$Figure))` per cent of minority ethnic adults said they felt a very or fairly strong sense of belonging to their community, compared to `r round(sum(filter(graphData,Breakdown=="White")$Figure))` per cent) of adults from from ‘white’ ethnic groups.

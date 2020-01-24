@@ -1,0 +1,28 @@
+`r y <- filter(EEFlatest,Measure=="% in relative poverty BHC")$Year[1]`
+
+
+* People from minority ethnic (non-white) groups were more likely to be in poverty, both after and before housing costs, compared to those from the 'White - British' group (combined data for `r 
+paste0(y-3,"-",substr(y,3,4))
+`).
+
+*After housing costs:*
+
+* `r 
+filter(EEFlatest,Measure=="% in relative poverty AHC",Characteristic=="Ethnicity",Breakdown=="Mixed, Black or Black British and Other")$Figure
+`% of people from 'Mixed, Black, Black British and Other' ethnic groups groups, and `r 
+filter(EEFlatest,Measure=="% in relative poverty AHC",Characteristic=="Ethnicity",Breakdown=="Asian or Asian British")$Figure
+`% of 'Asian or Asian British' ethnic groups were in relative poverty after housing costs.
+* In comparison `r 
+filter(EEFlatest,Measure=="% in relative poverty AHC",Characteristic=="Ethnicity",Breakdown=="White - British")$Figure
+`% of 'White - British' people were in relative poverty.
+
+*Before housing costs:*
+
+* `r 
+filter(EEFlatest,Measure=="% in relative poverty BHC",Characteristic=="Ethnicity",Breakdown=="Mixed, Black or Black British and Other")$Figure
+`% of people from 'Mixed, Black, Black British and Other' ethnic groups groups, and `r 
+filter(EEFlatest,Measure=="% in relative poverty BHC",Characteristic=="Ethnicity",Breakdown=="Asian or Asian British")$Figure
+`% of 'Asian or Asian British' ethnic groups were in relative poverty before housing costs.
+* In comparison `r 
+filter(EEFlatest,Measure=="% in relative poverty BHC",Characteristic=="Ethnicity",Breakdown=="White - British")$Figure
+`% of 'White - British' people were in relative poverty.

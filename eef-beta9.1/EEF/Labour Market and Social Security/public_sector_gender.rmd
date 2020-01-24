@@ -1,0 +1,11 @@
+`r latest_year <- graphData$Year %>% max`
+`r first_year <- graphData$Year %>% min`
+
+*In `r latest_year` the Scottish Government workforce was made up of:*
+  
+* `r filter(graphData,Breakdown=="Women",Year==latest_year)$Figure %>% sprintf("%1.1f%%",.)` were women
+* `r filter(graphData,Breakdown=="Men",Year==latest_year)$Figure %>% sprintf("%1.1f%%",.)` were men
+
+*Between `r first_year` and `r latest_year`:*
+
+* Women increasingly comprise more of the organisations workforce: increasing from `r filter(graphData, Year==first_year, Breakdown == "Women")$Figure %>% sprintf("%1.1f%%",.)` to `r filter(graphData, Year==latest_year, Breakdown == "Women")$Figure %>% sprintf("%1.1f%%",.)`

@@ -1,0 +1,17 @@
+* In 2017/18, drug use was highest among younger people. 19.2% in the 16-24 age group had tried drugs in the last 12 months 
+
+`r pubSource("Scottish Crime and Justice Survey")`
+ 
+___
+
+* In 2017/18, the number and rate of younger people admitted to hospital for drug misuse has increased since 2012/13. However, admissions among older drug users have increased more significantly
+
+`r pubSource("Drug-Related Hospital Statistics Scotland")`
+
+___
+
+* There is a clear trend of an ageing population of drug users for whom drug use has become more harmful over time. 
+* The average age of drug related deaths was 34 in 2007 and 41 in 2017. 
+
+
+ 

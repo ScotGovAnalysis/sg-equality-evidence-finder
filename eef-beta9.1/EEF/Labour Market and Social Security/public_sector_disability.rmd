@@ -1,0 +1,13 @@
+`r latest_year <- graphData$Year %>% max`
+`r first_year <- graphData$Year %>% min`
+
+*In `r latest_year` the Scottish Government workforce was made up of:*
+  
+* `r filter(graphData,Breakdown=="Disabled",Year==latest_year)$Figure %>% sprintf("%1.1f%%",.)` were disabled
+* `r filter(graphData,Breakdown=="Non-disabled",Year==latest_year)$Figure %>% sprintf("%1.1f%%",.)` were non-disabled
+* For `r filter(graphData,Breakdown%in%c("Unknown","Prefer not to say"),Year==latest_year)$Figure %>% sum %>% sprintf("%1.1f%%",.)` it's not known whether they had a disability 
+
+*Between `r first_year` and `r latest_year`:*
+  
+* Disabled people increasingly comprise more of the organisations workforce: increasing from `r filter(graphData, Year==first_year, Breakdown == "Disabled")$Figure %>% sprintf("%1.1f%%",.)` to `r filter(graphData, Year==latest_year, Breakdown == "Disabled")$Figure %>% sprintf("%1.1f%%",.)`
+* Declaration rates have decreased from `r (100-filter(graphData, Year==first_year, Breakdown == "Unknown")$Figure) %>% sprintf("%1.1f%%",.)` to `r (100-filter(graphData, Year==latest_year, Breakdown == "Unknown")$Figure) %>% sprintf("%1.1f%%",.)`

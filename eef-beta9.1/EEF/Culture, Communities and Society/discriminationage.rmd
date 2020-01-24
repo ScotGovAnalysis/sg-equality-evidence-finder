@@ -1,0 +1,4 @@
+
+* In `r max(graphData$Year)`, adults in the 60-74 and 75+ age groups were least likely to report experiencing discrimination or harassment.
+
+* `r round(filter(graphData,Breakdown=="75+",Measure=="Harassment")$Figure)`% of adults aged 75 and over reported experiencing harassment, compared to `r round(filter(graphData,Breakdown=="16 to 24",Measure=="Harassment")$Figure)`% of 16 to 24 year olds.

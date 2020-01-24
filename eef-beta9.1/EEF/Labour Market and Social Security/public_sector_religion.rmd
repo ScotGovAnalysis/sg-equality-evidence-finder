@@ -1,0 +1,10 @@
+`r latest_year <- graphData$Year %>% max`
+`r first_year <- graphData$Year %>% min`
+
+*In `r latest_year` the Scottish Government workforce was made up of:*
+  
+* `r filter(graphData,Breakdown=="None",Year==latest_year)$Figure %>% sprintf("%1.1f%%",.)` belonged to no religion
+* `r filter(graphData,Breakdown=="Christian",Year==latest_year)$Figure %>% sprintf("%1.1f%%",.)` were Christian
+* `r filter(graphData,Breakdown=="Other Religion",Year==latest_year)$Figure %>% sprintf("%1.1f%%",.)` belonged to another religion
+* For `r filter(graphData,Breakdown%in%c("Unknown","Prefer not to say"),Year==latest_year)$Figure %>% sum %>% sprintf("%1.1f%%",.)` it's not known which religion they belonged to. 
+* Between `r first_year` and `r latest_year`, declaration rates have increased from `r (100-filter(graphData, Year==first_year, Breakdown == "Unknown")$Figure) %>% sprintf("%1.1f%%",.)` to `r (100-filter(graphData, Year==latest_year, Breakdown == "Unknown")$Figure) %>% sprintf("%1.1f%%",.)`

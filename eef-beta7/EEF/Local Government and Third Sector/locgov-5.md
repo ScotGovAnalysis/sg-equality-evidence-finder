@@ -1,1 +1,0 @@
-* In 2017 there was no evidence of a difference in satisfaction of people from minority ethnic backgrounds (53%) who expressed satisfaction with local schools, local health care and public transport (as a composite measure) compared to people from a 'White' ethnic group (52%).

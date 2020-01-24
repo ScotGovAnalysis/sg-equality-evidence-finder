@@ -1,1 +1,0 @@
-* In 2017, adults identifying as “LGB & Other” reported a higher smoking rate (24%) than those identifying as “Heterosexual” (18%). Both groups have seen a reduction from previous years, with the “LGB & Other” group falling by 11.5 percentage points and the “Heterosexual” group falling by 6.0 percentage points since 2012.

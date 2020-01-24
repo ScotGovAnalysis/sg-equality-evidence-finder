@@ -1,0 +1,3 @@
+* The pattern of entrepreneurial activity across SIMD quintiles has fluctuated in recent years. 
+
+* In `r max(graphData$Year)`, total early-stage Entrepreneurial Activity (TEA) was `r filter(graphData,grepl("5",Breakdown),Year==max(Year))$Figure %>% sprintf("%1.1f%%",.)` in the 20% least deprived areas, and was `r filter(graphData,grepl("1",Breakdown),Year==max(Year))$Figure %>% sprintf("%1.1f%%",.)` in the 20% most deprived areas.

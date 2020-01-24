@@ -1,0 +1,45 @@
+
+`r 
+#set up the data.
+
+
+#create a variable containing all the year options. (no edit needed)
+
+Year <- levels(as.factor(EEFlatest$Year))
+
+#create a latest year variable (no edit needed)
+
+latestyear <- max(graphData$Year)
+
+
+#create the first year as a variable (no edit needed)
+
+firstyear <- min(graphData$Year)
+
+
+#create the latest year's data for the % of elc registrations with a home language other than english (no edit needed)
+
+ELC_lang_latest <- round(filter(graphData, Breakdown == "All", Year == latestyear)$Figure,1)
+
+#create the latest year's data for the % of elc registrations with a home language other than english (no edit needed)
+
+ELC_lang_first <- round(filter(graphData,  Breakdown == "All", Year == firstyear)$Figure,1)
+
+#Calculate difference from first year
+
+Difference <- round(ELC_lang_latest - ELC_lang_first,1)
+
+#convert difference to positive if below 0
+
+Difference2 <- ifelse(Difference < 0,round(Difference*-1),round(Difference,1))
+
+#change the wording based on the difference
+
+increase_decrease <- ifelse(Difference2 < 0,print("a decrease of"),ifelse(Difference2 > 0,print("an increase of"),print("a change of")))
+
+
+#writen text. No edit needed, it should update with above.
+
+`
+
+* In `r latestyear` `r ELC_lang_latest`% of early learning and childcare registrations had a home language other than English. This is `r increase_decrease` `r Difference2` percentage points since `r firstyear`.

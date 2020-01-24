@@ -1,0 +1,3 @@
+* In `r max(graphData$Year)`, adults belonging to the Church of Scotland were least likely to have experienced discrimination in the previous 12 months (`r filter(graphData,Breakdown=="Church of Scotland",Measure=="Discrimination")$Figure %>% round`%). 
+* In contrast, `r filter(graphData,Breakdown=="Roman Catholic",Measure=="Discrimination")$Figure %>% round`% of Roman Catholics, and `r filter(graphData,Breakdown=="Other Christian",Measure=="Discrimination")$Figure%>%round`% of other Christians had experienced discrimination.
+* Adults belonging to another religion were most likely to have experienced discrimination (`r filter(graphData,Breakdown=="Another religion",Measure=="Discrimination")$Figure %>% round`%).

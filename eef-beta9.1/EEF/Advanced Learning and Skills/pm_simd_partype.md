@@ -1,0 +1,2 @@
+* In 2018/19 the participation rate for young people (aged 16-19) in education was 82.2% for those in the least deprived areas (Quintile 5) compared to 63.7% for those in the most deprived areas (Quintile 1).
+* In 2018/19 the participation rate for young people (aged 16-19) in employment was 18.7% for those in the most deprived areas (Quintile 1) compared to 13.2% for those in the least deprived areas (Quintile 5).

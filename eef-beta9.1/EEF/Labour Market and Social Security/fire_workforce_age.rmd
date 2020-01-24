@@ -1,0 +1,8 @@
+`r latest_year <- graphData$DateCode %>% max`
+`r first_year <- graphData$DateCode %>% min`
+`r age_bands <- unique(graphData$Breakdown)`
+`r latest_data <- filter(graphData,DateCode==max(DateCode)) %>% arrange(desc(Figure))`
+
+
+* In `r latest_year`, the largest proportions of the Scottish Fire and rescue workforce were in the age bands `r latest_data$Breakdown[1]` (`r latest_data$Figure[1] %>% sprintf("%1.1f%%",.)`) and `r latest_data$Breakdown[2]` (`r latest_data$Figure[2] %>% sprintf("%1.1f%%",.)`).
+* Fewer young people were in the workforce with `r filter(latest_data,Breakdown==age_bands[1])$Figure %>% sprintf("%1.1f%%",.)` aged `r age_bands[1]`.
