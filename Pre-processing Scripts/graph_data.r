@@ -989,7 +989,31 @@ setGraphData[["incPov-23"]] <- filter(EEFdata,Characteristic=="Socio-Economic St
 setGraphOptions[["incPov-23"]] <- list(graphType="timeSeries1",
                                        #dyEvent=list(list(date=as.Date("2008-01-01"),label="2008 Financial Crisis")),
                                        digits=0
-                                    )
+)
+
+setGraphData[["incPov-24"]] <- filter(EEFdata,Characteristic=="Gender",Measure%in%c("£ median household wealth"))
+setGraphOptions[["incPov-24"]] <- list(graphType="barChart1",
+                                       intervalType="2 year",
+                                       sortOrder=NA,
+                                       #dyEvent=list(list(date=as.Date("2008-01-01"),label="2008 Financial Crisis")),
+                                       digits=0
+)
+
+setGraphData[["incPov-25"]] <- filter(EEFdata,Characteristic=="Age",Measure%in%c("£ median household wealth"))
+setGraphOptions[["incPov-25"]] <- list(graphType="barChart1",
+                                       sortOrder=NA,
+                                       intervalType="2 year",
+                                       #dyEvent=list(list(date=as.Date("2008-01-01"),label="2008 Financial Crisis")),
+                                       digits=0
+)
+
+setGraphData[["incPov-26"]] <- filter(EEFdata,Characteristic=="Disability",Measure%in%c("£ median household wealth"))
+setGraphOptions[["incPov-26"]] <- list(graphType="barChart1",
+                                       sortOrder=NA,
+                                       intervalType="2 year",
+                                       #dyEvent=list(list(date=as.Date("2008-01-01"),label="2008 Financial Crisis")),
+                                       digits=0
+)
 
 ####Labour Market and Social Security####
 

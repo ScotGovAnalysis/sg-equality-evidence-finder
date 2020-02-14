@@ -29,12 +29,17 @@ eefSummarySectionServer <- function(input,output,session,id=NULL,loadData=list()
         for(r in 1:nrow(content)) {
           tabId <- content$tabUID[r]
           ns <- NS(tabId,"chart") %>% NS
-          #panelData <- as.list(graphOptions[[tabId]]$panelData)
           panelData <- as.list(content[r,])
           Encoding(panelData$dataSourceNotes) <- "UTF-8" #special characters need to be displayed as UTF-8 in Shiny (note this is not the Windows/Microsoft default)
           Encoding(panelData$subtitle) <- "UTF-8"
           Encoding(panelData$headline) <- "UTF-8"
-          if(!is.null(panelData$headline)) if(panelData$headline %in% c("",NA)) panelData$headline <- NULL else panelData$headline <- h2(panelData$headline,class="eef-graph-header-text")
+          if(!is.null(panelData$headline)) 
+            if(panelData$headline %in% c("",NA)) {
+              panelData$headline <- NULL 
+            } else {
+              panelData$headline <- knit(text = panelData$headline, quiet = TRUE, encoding = "UTF-8") %>%
+                h2(class="eef-graph-header-text")
+            }
           
           if(panelData$markdownFile %in% c("",NA) | (!file.exists(as.character(panelData$markdownFile)))) {
              panelData$markdownFile <- NULL

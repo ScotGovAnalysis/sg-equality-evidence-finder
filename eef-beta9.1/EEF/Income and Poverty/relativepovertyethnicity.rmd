@@ -2,7 +2,7 @@
 
 
 * People from minority ethnic (non-white) groups were more likely to be in poverty, both after and before housing costs, compared to those from the 'White - British' group (combined data for `r 
-paste0(y-3,"-",substr(y,3,4))
+paste0(y-5,"-",substr(y,3,4))
 `).
 
 *After housing costs:*

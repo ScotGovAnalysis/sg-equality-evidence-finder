@@ -1,0 +1,9 @@
+`r yearlabel <- paste0(graphData$Year-2, "-", graphData$Year)[[1]]`
+`r totmedian <- filter(graphData, Year == max(Year), Breakdown == "Total", Characteristic == "Disability") %>% select(Figure)`
+`r median <- format(totmedian[[1]], big.mark = ",")`
+
+* In `r yearlabel`, the average (median) household in Scotland had £`r median` in personal wealth.
+
+* Households with no disabled household members had slightly above average wealth, whereas those with disabled members had below average wealth.
+
+* Note that small differences in median wealth between different household types may not be meaningful and should be interpreted with care. This is because these estimates are based on a sample survey and could be slightly higher or lower if we interviewed a different sample of the population.

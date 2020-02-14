@@ -36,6 +36,8 @@ library(rmarkdown)
 library(markdown)
 library(knitr)
 library(purrr)
+library(scales)
+
 onScots <- !require(SPARQL) #package that doesn't work on Scots. onScots is a flag used to switch off functionality incompatible with Scots
 
 updateAppData <- function(appDir,dataDir,scriptDir,policyArea=NULL,tabUIDs=NULL,dataFile="EEF.rData",test=FALSE) {
@@ -47,7 +49,7 @@ updateAppData <- function(appDir,dataDir,scriptDir,policyArea=NULL,tabUIDs=NULL,
   
   source(file.path(appDir,"EEF scripts/helper_funcs.r"),local=T)
   source(file.path(scriptDir,"pre_process_EEF.r"),local=TRUE)
-  source(file.path(scriptDir,"graph_data.r"),local=TRUE)
+  source(file.path(scriptDir,"graph_data.r"),local=TRUE,encoding="UTF-8")
   
   updateTabUIDs <- filter(EEFindex,!is.na(tabUID),is.na(cloneTabID))
   if(!is.null(policyArea)) updateTabUIDs <- filter(updateTabUIDs,policy_area %in% policyArea)

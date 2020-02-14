@@ -50,9 +50,10 @@ dygraphServer <- function(input,output,session,filteredGraph=reactive({NULL}),gr
   if(is.null(graphOptions$minZoom)) minZoom <- c(NA,NA) else minZoom <- graphOptions$minZoom
   if(is.null(graphOptions$nZoomLevels)) nZoomLevels <- 2 else nZoomLevels <- graphOptions$nZoomLevels
   if(!is.null(graphOptions$digits)) yFormat <- NULL else yFormat <- jsFormatCommas(graphOptions$digits)
-    #yFormat <- jsFormatCommas(graphOptions$digits)
+  #yFormat <- jsFormatCommas(graphOptions$digits)
+  #id <- substr(ns(""),1,nchar(ns(""))-nchar(ns.sep))
   if(is.null(graphOptions$digits)) graphOptions$digits <- 2
-    
+  
   zoomLevel <- reactiveVal(0)
   shinyjs::onclick("zoomIn", {
     if(zoomLevel()<nZoomLevels) zoomLevel(zoomLevel()+1)
@@ -118,7 +119,6 @@ dygraphServer <- function(input,output,session,filteredGraph=reactive({NULL}),gr
       ) %>%
       dyAxis("y", drawGrid=FALSE,label= filteredGraph()$yLabel[1],valueRange=graphRange,valueFormatter = yFormat)
     
-    #if(!is.null(graphOptions$digits)) plot <- dyOptions(plot,digitsAfterDecimal=graphOptions$digits)
     
     #To add dygraph "events" (vertical lines) shading and annotations
     #These are read from the graphOptions list for the particular panel and should be a list of the form
