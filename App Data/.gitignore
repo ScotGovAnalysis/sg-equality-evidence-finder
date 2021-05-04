@@ -1,5 +1,5 @@
-.rData
-.Rhistory
-*.Rproj
+/.rData
+/.Rhistory
+/*.Rproj
 /rsconnect
 /.Rproj.user
