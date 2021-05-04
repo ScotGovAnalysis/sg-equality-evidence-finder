@@ -1,6 +1,6 @@
 /.httr-oauth
 /gs_token.rds
-/.rData
+/.RData
 /.Rhistory
 /*.Rproj
 /rsconnect
