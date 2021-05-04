@@ -1,4 +1,0 @@
-* In 2018, as in previous years, age-standardised WEMWBS mean scores significantly decreased as area deprivation increased. In the most deprived quintile, the mean WEMWBS score was significantly lower (47.0) than in the least deprived quintile (51.6).
-* In 2018, adults living in the most deprived areas were significantly more likely to have a GHQ-12 score of four or more than those in the least deprived areas. The percentage of adults with a GHQ-12 score of four or more was relatively stable among the 5th (least deprived), 4th and 3rd deprivation quintiles (14-17%) but increased to 24% and 26%, respectively, among the 2nd and 1st (most deprived) quintiles. 
-* In 2018, the percentage of adults with a GHQ-12 score of zero was similar among the 5th (least deprived), 4th and 3rd deprivation quintiles at 55-57%, but decreased in the 2nd and 1st (most deprived) quintiles to 50% and 47%, respectively.  
-

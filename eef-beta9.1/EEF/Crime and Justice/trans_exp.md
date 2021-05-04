@@ -1,5 +1,0 @@
-* A survey of 71 respondents show that:
-* 46% of respondents had previously experienced transphobic abuse in domestic relationships: mostly this took the form of verbal abuse but 17% experienced threatening behaviour; 11% experienced physical abuse and six percent experienced sexual abuse.
-* 62% of respondents stated that they had experienced transphobic harassment from strangers in public places who perceived them to be Transgender: mostly this took the form of verbal abuse but 31% experienced threatening behaviour, 17% experienced physical assault and four percent experienced sexual assault.
-* Although 38% did not describe experiencing transphobic harassment from strangers, it must be taken into account that 23% of respondents stated they have never been perceived to be Transgender by any strangers. Therefore, just 15% of respondents had been perceived as Transgender by strangers on one or more occasion but never experienced any transphobic harassment.
-* Only 15% of respondents had ever reported any transphobic harassment to the police. Of those 11 respondents, only five stated they were satisfied with the response they received from the police.

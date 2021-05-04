@@ -1,6 +1,0 @@
-`r graphData$yearlab <- paste0(graphData$Year-3,"-",substr(graphData$Year,3,4))`
-`r graphLatest <- filter(graphData,Year==max(Year))`
-
-* In `r graphLatest$yearlab[1]`, after housing costs are accounted for, `r filter(graphLatest,Breakdown=="Children",Measure=="After Housing Costs")$Figure`% of children, `r filter(graphLatest,Breakdown=="Working Age Adults",Measure=="After Housing Costs")$Figure`% of working age adults and `r filter(graphLatest,Breakdown=="Pensioners",Measure=="After Housing Costs")$Figure`% of pensioners in Scotland were living in relative poverty.
-
-* Before housing costs, `r filter(graphLatest,Breakdown=="Children",Measure=="Before Housing Costs")$Figure`% of children, `r filter(graphLatest,Breakdown=="Working Age Adults",Measure=="Before Housing Costs")$Figure`% of working age adults and `r filter(graphLatest,Breakdown=="Pensioners",Measure=="Before Housing Costs")$Figure`% of pensioners in Scotland were living in relative poverty.

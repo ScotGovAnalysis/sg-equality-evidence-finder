@@ -1,1 +1,0 @@
-* In `r graphData$Year[1]` almost nine in ten adults (`r round(sum(filter(graphData,Breakdown=="75+")$Figure))` per cent) aged 75 and above said they felt a very or fairly strong sense of belonging to their community, compared to just over seven in ten (`r round(sum(filter(graphData,Breakdown=="16-24")$Figure))` per cent) of those aged between 16 and 24

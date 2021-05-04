@@ -1,2 +1,0 @@
-* In `r max(graphData$Year)` women were more likely to have a very strong sense of belonging to their community (`r filter(graphData,Breakdown=="Women",Measure=="Very Strongly")$Figure %>% round`%) than men (`r filter(graphData,Breakdown=="Men",Measure=="Very Strongly")$Figure %>% round`%)
-

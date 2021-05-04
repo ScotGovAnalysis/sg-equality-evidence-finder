@@ -1,5 +1,0 @@
-`r graphData$yearlab <- paste0(graphData$Year-3,"-",substr(graphData$Year,3,4))`
-`r graphLatest <- filter(graphData,Year==max(Year))`
-
-* In `r graphLatest$yearlab[1]`, the relative poverty rate after housing costs was higher for lone mothers (`r filter(graphLatest,Breakdown=="Lone mothers",Measure=="Single working-age adult: % in relative poverty AHC")$Figure`%) than for other single working-age adults. 
-* The poverty rate for single working-age women without dependent children was `r filter(graphLatest,Breakdown=="Women without dependent children",Measure=="Single working-age adult: % in relative poverty AHC")$Figure`%, and for single working-age men it was `r filter(graphLatest,Breakdown=="Men",Measure=="Single working-age adult: % in relative poverty AHC")$Figure`%

@@ -1,3 +1,0 @@
-
-* In `r max(graphData$Year)`, minority ethnic adults were more likely to have experienced discrimination in the previous 12 months (`r round(filter(graphData,Breakdown=="Minority ethnic",Measure=="Discrimination")$Figure)` per cent) compared to white adults (`r round(filter(graphData,Breakdown=="White",Measure=="Discrimination")$Figure)` per cent).
-* Minority ethnic adults were also more likely to have experienced harassment (`r round(filter(graphData,Breakdown=="Minority ethnic",Measure=="Harassment")$Figure)` per cent) than adults from 'White' ethnic groups (`r round(filter(graphData,Breakdown=="White",Measure=="Harassment")$Figure)` per cent).

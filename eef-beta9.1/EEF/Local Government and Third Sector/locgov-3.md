@@ -1,1 +1,0 @@
-* In 2018 there no evidence of a difference between the proportion of disabled (50%) and non-disabled (52%) people who were satisfied with the quality of local schools, local health services and public transport (as a composite measure).

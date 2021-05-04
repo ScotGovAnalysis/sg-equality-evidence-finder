@@ -1,1 +1,0 @@
-* In 2014-17, the **poverty rate** after housing costs of single working-age women, including lone parents, was 30% and 26% for men. Over the past ten years, the poverty rate has been slightly higher for women in most years.

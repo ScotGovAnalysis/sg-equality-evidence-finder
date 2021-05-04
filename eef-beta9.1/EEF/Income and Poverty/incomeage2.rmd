@@ -1,2 +1,0 @@
-* Around a half (`r filter(graphData,Breakdown=="18-24",Year==max(Year))$Figure%>%sprintf("%1.0f%%",.)`) of employees aged 18-24 earned less than the living wage (£9.00 per hour) in `r graphData$Year %>% max`. 
-* This compares to much lower proportions (less than 20%) amongst the other, older age groups.

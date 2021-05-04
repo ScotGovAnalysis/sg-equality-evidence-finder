@@ -1,1 +1,0 @@
-* Between 1998 and 2018, the increase in the population of older age groups was much higher than younger age groups. The largest increase was in the 75 and over age group (+31%) whereas the population of children aged 0 to 15 decreased the most (-8%).

@@ -1,1 +1,0 @@
-* All minority ethnic groups were less likely than the 'White' group to report that they were limited either 'a little' or 'a lot' by a long-term health problem or disability. It should be noted that minority ethnic groups had younger age profiles than the population as a whole.

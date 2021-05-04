@@ -1,1 +1,0 @@
-* As at end June 2019, 13.8% of the NHS Scotland workforce (whole time equivalent) were aged under 30 years, whilst just under half (46.6%) were aged between 30 and 49 years, and 39.6% were aged 50 years and over.

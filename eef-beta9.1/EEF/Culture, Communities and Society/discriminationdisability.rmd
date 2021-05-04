@@ -1,3 +1,0 @@
-* In `r max(graphData$Year)`, adults with a long-term limiting physical/mental health condition were more likely to have experienced discrimination in the previous 12 months (`r round(filter(graphData,Breakdown=="Disabled",Measure=="Discrimination")$Figure)` per cent) compared to non-disabled adults (`r round(filter(graphData,Breakdown=="Non-disabled",Measure=="Discrimination")$Figure)` per cent).
-* Adults with a long-term limiting physical/mental health condition were also more likely to have experienced harassment (`r round(filter(graphData,Breakdown=="Disabled",Measure=="Harassment")$Figure)` per cent) than non-disabled adults (`r round(filter(graphData,Breakdown=="Non-disabled",Measure=="Harassment")$Figure)` per cent).
-

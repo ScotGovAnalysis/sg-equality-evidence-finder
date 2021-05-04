@@ -1,1 +1,0 @@
-* In Glasgow City, 12% of the population were from a minority ethnic group. In City of Edinburgh and Aberdeen City it was 8% and Dundee City it was 6%. These areas also saw the largest increases since 2001 in the proportion of their population who are from minority ethnic groups.

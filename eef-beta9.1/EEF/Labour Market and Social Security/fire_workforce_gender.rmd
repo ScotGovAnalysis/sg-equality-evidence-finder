@@ -1,4 +1,0 @@
-`r latest_year <- graphData$DateCode %>% max`
-`r first_year <- graphData$DateCode %>% min`
-
-* In `r latest_year`, the majority of the Scottish Fire and Rescue Service workforce were men (`r filter(graphData,Breakdown=="Men",DateCode==latest_year)$Figure %>% sprintf("%1.1f%%",.)`).

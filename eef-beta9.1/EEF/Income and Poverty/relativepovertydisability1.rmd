@@ -1,6 +1,0 @@
-`r graphData$yearlab <- paste0(graphData$Year-3,"-",substr(graphData$Year,3,4))`
-`r graphLatest <- filter(graphData,Year==max(Year))`
-
-* Poverty rates remained higher for households with a disabled adult. 
-
-* In `r graphLatest$yearlab[1]`, the poverty rate after housing costs for people in families with a disabled person was `r filter(graphLatest,grepl("with somebody disabled in the family",Breakdown),Measure=="% in relative poverty AHC")$Figure`%. This compares with `r filter(graphLatest,grepl("with nobody disabled in the family",Breakdown),Measure=="% in relative poverty AHC")$Figure`% of people in a family without a disabled person who were in poverty.

@@ -1,2 +1,0 @@
-* Incidents of domestic abuse recorded by the police in Scotland with a female victim and a male perpetrator represented 79% of all incidents of domestic abuse in 2016-17 where gender information was recorded. Since 2007-08 this percentage share has fallen from 85%.
-* The proportion of incidents with a male victim and a female perpetrator (where gender was recorded) has increased from 13% in 2007-08 to 18% in 2016-17.

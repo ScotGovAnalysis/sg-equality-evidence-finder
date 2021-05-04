@@ -1,2 +1,0 @@
--   Around 13% of children in Scotland lived in workless households in
-    2016.

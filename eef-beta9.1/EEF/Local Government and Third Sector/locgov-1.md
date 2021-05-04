@@ -1,1 +1,0 @@
-* There is no evidence of a difference between men and women's satisfaction with public services overall. In 2018, 52% of men and 51% of women said they were satisfied with local schools, local health services and public transport (as a composite measure).

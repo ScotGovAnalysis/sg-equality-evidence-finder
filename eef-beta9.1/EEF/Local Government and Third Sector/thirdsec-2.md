@@ -1,1 +1,0 @@
-* The level of volunteering is highest in those aged 35-44, with 33% of those in that age group volunteering in the last 12 months. After the age of 74, the level of volunteering declines - in 2018, 18% of people aged 75 and over volunteered in the last 12 months, compared to 26% of adults overall.

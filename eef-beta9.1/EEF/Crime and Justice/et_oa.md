@@ -1,2 +1,0 @@
-* Offence aggravation data show that in 2016-17 721 people were convicted in Scottish courts of an offence with an associated racial aggravation.
-* More than three-quarters of these were for a main charge of breach of the peace or common assault.c background (which includes ‘White Scottish’ and ‘White English’) and 4.9% of perpetrators were of an ‘Other White’ ethnic background (which includes ‘White Polish’ and ‘White Irish’).led people had solved their problems whereas 52% without a disability had succeeded in resolving their problems.

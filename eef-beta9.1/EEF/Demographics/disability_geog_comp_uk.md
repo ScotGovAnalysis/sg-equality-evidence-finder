@@ -1,1 +1,0 @@
-* A higher proportion of people in Scotland (20%) reported a health problem or disability in 2011 than the UK as a whole (18%). However Scotland recorded a lower proportion than Wales (23%) and Northern Ireland (21%).

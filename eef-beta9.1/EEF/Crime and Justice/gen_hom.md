@@ -1,2 +1,0 @@
-* In 2016-17, three quarters (75%) of victims of homicide were male with female victims making up the remaining quarter (25%). This has remained relatively unchanged over the past ten years.
-* In 2016-17, there were 48 male victims of homicide a decrease of almost half (47%) over since 2007-08 when there were 91 male victims. Over the same period the number of female victims of homicide fell by a third (33%) from 24 victims to 16 victims.
