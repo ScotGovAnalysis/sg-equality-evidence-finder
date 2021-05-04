@@ -1,0 +1,244 @@
+`.row {
+   margin-right: 0px;
+   margin-left: 0px;
+}
+div.row-odd {      
+   background-color: #FCFCFC;
+}
+div.row-even {
+   background-color: #EAEAEA;
+}
+
+h3.input-header {
+   border: 1px solid #D3D3D3;
+   background: red;
+   padding-top: 0px;
+   padding-left: 4px;
+	font-size: 110%;   
+   line-height: 1.5;
+}
+h3.tabTitle {
+   text-align: center;
+   color: #7597c5;
+  /* background-color: #4D4D4D;*/
+  
+   
+}
+p.tabDesc {
+   text-align: center;
+   padding-left: 4em;
+   padding-right: 4em;
+   /*color: orange;*/
+   height: 200px;
+}
+/*div.tabTitlePanel-end {
+   background-image: url("breadcrumb-bg.png");
+   background-repeat: repeat-x;
+   height: 2px;
+   
+}*/
+
+div.tabTitlePanel {
+   background-color: #f58203;
+   
+}
+
+img.transparentcircle {
+  /*margin: 100px;*/
+  /*max-width: 100%;*/
+  background: radial-gradient('circle at center', white 60%, transparent 61%);
+  border-radius:50%;
+ /* overflow:hidden;*/
+  border: 3px solid #f58203;
+  float:left;
+}
+
+
+div.float {
+   float: left;
+   padding-bottom: 10px;
+}
+
+div.divwell {
+   margin-top: -8px;
+   padding-right: 20px;
+   width: 280px;
+   
+}
+
+div.divwell2 {
+   padding-right: 20px;
+   width: 280px;
+   
+}
+
+div.divwellcol {
+  background-color: white;
+}
+
+h3.showtext {
+  font-family: ;'Gustan', Helvetica, Arial, sans-serif;
+}
+
+div.divfull {
+   width: 100%;
+}
+div.divflex {
+   width: 100%;
+}
+@media (min-width: 1400px){
+   div.divflex {
+      width: 50%;
+   }
+}
+div.align-well {
+   margin-left: 280px;
+}
+
+div.actcat {
+   width: 390px;
+}
+
+div.checkboxcombo div.checkboxcombo-all{
+   margin-top: 0px;
+   margin-bottom: 10px;
+}
+div.checkboxcombo div.shiny-options-group{
+   max-height: 230px;
+   overflow-y: auto;
+}
+
+ul.datasource {
+   margin-top: 10px;
+   font-style: italic;
+   list-style-type: none;
+}
+
+.canvas {
+  padding-top:20px;
+  
+}
+
+div.divplot {
+   width: -moz-calc(100% - 280px);
+   width: -webkit-calc(100% - 280px);
+   width: calc(100% - 280px);
+}
+div.divplotduo {
+   width: -moz-calc(100% - 560px);
+   width: -webkit-calc(100% - 560px);
+   width: calc(100% - 560px);
+}
+div.divplotduo-label {
+   height: 500px;
+   padding-right: 0px;
+}
+div.divplothalf {
+   width: 50%;
+}
+div.divplothalf-label {
+   width: 100%;
+   height: 4em;
+   padding-top: 1em;
+   padding-left: 1em;
+}
+div.divplothalf-label-large {
+   width: 100%;
+   height: 7em;
+   padding-top: 1em;
+   padding-left: 1em;
+}
+div.divplothalf-label > span {
+   padding-right: 1em;
+}
+div.divplothalff {
+   width: 50%;
+}
+div.divplothalff-label {
+   width: 100%;
+   height: 3em;
+   border-top: 1px solid #666;
+}
+div.divplothalff-label > span {
+   padding-right: 1em;
+}
+div.divwell div.dylegend {
+   margin-right: -18px;
+}
+div.dylegend > span.highlight {
+   font-size: larger;
+   font-weight: bold;
+}
+div.divwell div.dylegend > span.highlight {
+   padding-left: 0.5em;
+   border-left: 0.5em solid #666;
+}
+div.dygraph-label {
+   font-size: 16px;
+}
+
+div.shiny-datatable-output td:first-child, div.shiny-datatable-output th:first-child {
+   text-align: left;
+   /*color: black;*/
+}
+
+div.dydownload-group ul {
+   margin-left: -20px;
+}
+
+.ui-tooltip {
+	padding: 4px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 300px;
+	-webkit-box-shadow: 0 0 5px #aaa;
+	box-shadow: 0 0 5px #aaa;
+   font-size: smaller;
+}
+
+div.highcharts-tooltip table td:first-child {
+   padding-left: 0em;
+   text-align: left;
+}
+
+div.highcharts-tooltip table td {
+   padding-left: 1em;
+   text-align: right;
+}
+
+div.box-con {
+   height: 500px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+div.box-more {
+  /* text-align: left;*/
+   float: left;
+   width: 100%;
+   color: #3D6497;
+  /* border: 3px solid #F2F2F2;*/
+}
+
+div.halfbox {
+  /* text-align: left;*/
+   float: left;
+   width: 50%;
+   margin-left:25%;
+   margin-right:25%;
+  /* color: #3D6497;*/
+  /* border: 3px solid #F2F2F2;*/
+}
+
+div.box-rear {
+ 
+   width: 50%;
+   color: #3F3F3F;
+   background-color: #F2F2F2;
+   border-top: 2px solid transparent;
+}
+div.box-rear:hover {
+   color: #FFFFFF;
+   background-color: #3F3F3F;
+   border-image: linear-gradient(to right, #157BA3 0%, #96D602 100%) 1 1 stretch;
+}

@@ -1,0 +1,8 @@
+.httr-oauth
+gs_token.rds
+.rData
+.Rhistory
+*.Rproj
+/rsconnect
+/.Rproj.user
+/www/icons/*
